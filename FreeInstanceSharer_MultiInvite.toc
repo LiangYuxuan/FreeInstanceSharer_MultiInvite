@@ -1,0 +1,8 @@
+## Interface: 90100
+## Author: @project-author@
+## Version: @project-version@
+## Title: FreeInstanceSharer_MultiInvite
+## RequiredDeps: FreeInstanceSharer
+## X-ReleaseDate: @project-date-iso@
+
+FreeInstanceSharer_MultiInvite.lua
