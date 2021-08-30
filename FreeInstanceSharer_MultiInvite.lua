@@ -17,6 +17,7 @@ P["MultiInvite"] = {
 
 local currentSelectList
 
+F.Options.args.Message.args.InviteOnWhisperMsg.hidden = function() return F.db.MultiInvite.Enable end
 F.Options.args.Plugins.args.MultiInvite = {
     name = "多邀请指令",
     type = 'group',
@@ -30,7 +31,7 @@ F.Options.args.Plugins.args.MultiInvite = {
         },
         List = {
             order = 10,
-            name = "列表",
+            name = "进组指令列表",
             type = 'group',
             guiInline = true,
             disabled = function() return not F.db.MultiInvite.Enable end,
@@ -44,7 +45,7 @@ F.Options.args.Plugins.args.MultiInvite = {
                 },
                 List = {
                     order = 2,
-                    name = IGNORE_LIST,
+                    name = "进组指令",
                     type = 'select',
                     get = function() return currentSelectList end,
                     set = function(_, value) currentSelectList = value end,
