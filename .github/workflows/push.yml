@@ -1,4 +1,4 @@
-name: build
+name: Build
 
 on:
   push:
@@ -13,10 +13,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Install and Run Luacheck
         uses: nebularg/actions-luacheck@v1
         with:
           args: "--no-color -q"
           annotate: warning
-

@@ -1,0 +1,26 @@
+name: Build pull request
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install and Run Luacheck
+        uses: nebularg/actions-luacheck@v1
+        with:
+          args: "--no-color -q"
+          annotate: warning
+
+      - name: Create Retail Package
+        uses: BigWigsMods/packager@master
+        with:
+          args: "-d -z"
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: pull-request-${{ github.head_ref }}-${{ github.event.number }}
+          path: .release/
