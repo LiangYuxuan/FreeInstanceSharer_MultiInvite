@@ -1,4 +1,4 @@
-## Interface: 90100
+## Interface: 90200
 ## Author: @project-author@
 ## Version: @project-version@
 ## Title: FreeInstanceSharer_MultiInvite
