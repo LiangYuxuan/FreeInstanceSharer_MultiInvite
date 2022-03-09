@@ -45667,6 +45667,7 @@ read_globals = {
 	"UpdatePetActionHighlightMarks",
 	"UpdateProfessionButton",
 	"UpdateScaleForFit",
+	"UpdateUIElementsForClientScene",
 	"UpdateUIPanelPositions",
 	"UpdateUIParentPosition",
 	"UpgradeAccount",
