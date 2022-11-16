@@ -1,4 +1,4 @@
-## Interface: 100000
+## Interface: 100002
 ## Author: @project-author@
 ## Version: @project-version@
 ## Title: FreeInstanceSharer_MultiInvite
