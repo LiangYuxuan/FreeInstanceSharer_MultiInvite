@@ -41535,6 +41535,7 @@ read_globals = {
 	"ExpansionLandingPageMixin",
 	"ExpansionLandingPage_LoadUI",
 	"ExpansionTrialDialogMixin",
+	"ExpansionTrial_Initialize",
 	"ExportDataStreamMixin",
 	"ExportUtil",
 	"ExtraAbilityContainerMixin",
